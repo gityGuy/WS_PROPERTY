@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="form-container">
+    <h2>Publish Property</h2>
+
+    <form method="POST">
+        {% csrf_token %}
+
+        <input type="text" name="title" placeholder="Title" required>
+        <input type="text" name="location" placeholder="Location" required>
+        <input type="text" name="price" placeholder="Price" required>
+        <input type="text" name="land_size" placeholder="Land Size in Cent"required>
+        <textarea name="description" placeholder="Description"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+{% endblock %}

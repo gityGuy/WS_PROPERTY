@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5f7fa;
+    color: #333;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #00aaff;
+}
+
+.nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+.post-btn {
+    background: #00aaff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.hero {
+    background: linear-gradient(to right, #00aaff, #0077cc);
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.tabs {
+    margin-top: 20px;
+}
+
+.tab {
+    padding: 8px 20px;
+    border: none;
+    cursor: pointer;
+    background: white;
+    margin: 5px;
+    border-radius: 20px;
+}
+
+.tab.active {
+    background: #ff6600;
+    color: white;
+}
+
+.search-box {
+    margin-top: 20px;
+}
+
+.search-box input {
+    padding: 10px;
+    width: 300px;
+    border-radius: 6px;
+    border: none;
+}
+
+.search-btn {
+    padding: 10px 15px;
+    border: none;
+    background: #ff6600;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.filters {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+    background: white;
+}
+
+.filter-select {
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.properties {
+    padding: 50px;
+    text-align: center;
+}
+
+.property-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.property-card {
+    background: white;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: 0.3s;
+}
+
+.property-card:hover {
+    transform: translateY(-10px);
+}
+
+.property-img {
+    height: 200px;
+    background: url('https://images.unsplash.com/photo-1560185007-cde436f6a4d0') center/cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.property-info {
+    padding: 15px;
+}
+
+.price {
+    color: #00aaff;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 40px;
+    background: #00aaff;
+    color: white;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+}
